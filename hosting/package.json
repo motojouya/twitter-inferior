@@ -1,0 +1,33 @@
+{
+  "name": "twitter-inferior",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Takuya Sugiyama (@motojouya)",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack-dev-server //TODO",
+    "check": "yarn run tsc --noEmit && yarn run tslint",
+    "tslint": "tslint --project tsconfig.json",
+    "tslint-fix": "tslint --fix --project tsconfig.json"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "typescript": "^3.5.3",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "babel-loader": "^8.0.6",
+    "prettier": "^1.18.2",
+    "ts-loader": "^6.0.4",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-plugin-prettier": "^2.0.1"
+  }
+}
