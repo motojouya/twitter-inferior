@@ -12,7 +12,11 @@
     "strictNullChecks": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true
+    "noImplicitReturns": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "pretty": true,
+    "skipLibCheck": true
   },
   "compileOnSave": true,
   "include": [

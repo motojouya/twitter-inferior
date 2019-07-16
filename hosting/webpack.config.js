@@ -11,11 +11,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.ts?$/,
+        test: /\.(js|jsx|ts|tsx)$/,
         use: [
-          // 下から順に処理される
-          { loader: "babel-loader" },
-          { loader: "ts-loader" }
+          {
+            loader: "babel-loader"
+          },
         ],
         exclude: /node_modules/
       }
