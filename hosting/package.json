@@ -6,14 +6,11 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
-    "watch": "npm run webpack -- --watch -d",
+    "watch": "npm run build -- --watch -d",
     "dev": "npm run watch & browser-sync start --config bs-config.js",
-    "check": "yarn run tsc --noEmit && yarn run tslint",
-    "tslint": "tslint --project tsconfig.json",
-    "tslint-fix": "tslint --fix --project tsconfig.json",
-    "lint": "eslint src/** --ext .ts,.tsx",
-    "lint:fix": "yarn lint --fix",
-    "eslint": "eslint -c ./.eslintrc.js 'src/**/*.{js,ts,tsx}'"
+    "check": "yarn run tsc --noEmit && yarn run lint",
+    "lint": "eslint src/** --ext .js,.ts,.tsx",
+    "lint:fix": "yarn lint --fix"
   },
   "husky": {
     "hooks": {

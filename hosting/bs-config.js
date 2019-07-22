@@ -15,7 +15,7 @@ module.exports = {
   "ui": {
     "port": 3001
   },
-  "files": "./public/**/*",
+  "files": "./dist/**/*",
   "watchEvents": [
     "change"
   ],
@@ -26,7 +26,7 @@ module.exports = {
     "ignoreInitial": true
   },
   "server": {
-    "baseDir": "./public",
+    "baseDir": "./dist",
     "middleware": function(req, res, next){
       // var timestamp = "[" + new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '') + "] ";
       // console.log(timestamp + req.method + " " + req.originalUrl + " - " +  req.connection.remoteAddress + " - " + req.headers['user-agent']);
